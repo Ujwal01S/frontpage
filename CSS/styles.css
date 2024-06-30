@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 /* CSS Variable */
 :root{
     --navbar-height:59px;
@@ -24,7 +29,7 @@
     /* relative halna agadi mero before ko background tala sama aera thiyo */
     display: flex;
     align-items: center;
-    position: relative;
+    position: sticky;
     top: 0;
 }
 
@@ -128,8 +133,9 @@
 
 /* Client section */
 #client-section{
-    height: 344px;
+    /* height: 344px; */
     position: relative;
+    z-index: -2;
 }
 
 #client-section::before{
@@ -139,7 +145,7 @@
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: 0.4;
+    opacity: 0.86;
 }
 
 #clients{
